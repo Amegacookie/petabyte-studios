@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nova+Square&display=swap');
+
+
+:root {
+    --text: #e7e7e7;
+    --accent: #ff0f7B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?q=80&w=3830&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+section {
+    padding: 2rem;
+}
+
+/* === hero section === */
+
+.hero {
+    background-color: rgba(3, 4, 14, 0.8);
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+}
+.hero img {
+    width: 200px;
+}
+.hero h1 {
+    font-size: 6rem;
+    font-family: 'Nova Square', sans-serif;
+    padding: 4rem 0;
+}
+.hero a {
+    background-color: var(--accent);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Nova Square', sans-serif;
+}
+.hero-content {
+    padding: 4rem calc(((100vw - 850px) / 2));
+    max-height: fit-content;
+}
+
+@media screen and (max-width: 750px) {
+    .hero h1 {
+        font-size: 4rem;
+        padding: 6rem 0;
+    }
+}
