@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --text: #fff;
+    --backgound: #262626;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--backgound);
+}
+.container {
+    padding: 0 calc((100vw - 700px) / 2);
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+}
+p {
+    width: 100%;
+    text-align: center;
+}
+.git-hub {
+    width: 100%;
+    text-align: center;
+}
+.git-hub img {
+    width: 5rem;
+}
+a {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
