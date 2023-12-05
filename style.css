@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nova+Square&display=swap');
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 :root {
     --text: #e7e7e7;
@@ -15,7 +22,7 @@
 }
 
 body {
-    background-image: url(https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?q=80&w=3830&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(images/background.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,13 +42,20 @@ section {
     height: 100%;
     min-height: 100vh;
 }
-.hero img {
-    width: 200px;
-}
 .hero h1 {
     font-size: 6rem;
     font-family: 'Nova Square', sans-serif;
     padding: 4rem 0;
+}
+.hero .material-symbols-outlined {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: var(--text);
+    vertical-align:middle;
+    margin-bottom: 0.2rem;
 }
 .hero a {
     background-color: var(--accent);
@@ -52,7 +66,7 @@ section {
     font-family: 'Nova Square', sans-serif;
 }
 .hero-content {
-    padding: 4rem calc(((100vw - 850px) / 2));
+    padding: 4rem calc(((100vw - 1050px) / 2));
     max-height: fit-content;
 }
 

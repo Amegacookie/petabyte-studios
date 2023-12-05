@@ -4,14 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Petabyte Studios</title>
 </head>
 <body>
+    <!-- ===== NAVBAR SETUP HTML ===== -->
+<nav id="nav">
+    <div class="nav-container auto-width">
+      <div class="logo">
+        <img src="images/PetaByte Web.png" alt="">
+      </div>
+  
+      <!-- ===== NAVBAR LINKS ===== -->
+      <div class="nav-links">
+        <ul>
+          <li><a href="https://webtest.megacookie.repl.co/">Home</a></li>
+          <li><a href="https://webtest.megacookie.repl.co/about">About</a></li>
+          <li><a href="https://webtest.megacookie.repl.co/games">Games</a></li>
+        </ul>
+    </div>
+   </div>
+  </nav> 
+  
+  
+  
+  <!-- ===== CSS CODE ====== -->
+  
+  <style>
+  /* ===== IMPORT GOOGLE FONTS ===== */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  /* ===== SETUP ===== */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+  }
+  
+  /* ===== VARIABLES [ROOT] ===== */
+  /* === TEXT VARIABLES === */
+  :root {
+    --text-dark: #151811;
+    --text-light: #ebeee7;
+  }
+  
+  /* === LIGHT THEME === */
+  :root[data-theme="light"] {
+    --text: var(--text-dark);
+    --background: #f2f4f0;
+    --secondary-bg: #e0e0e0;
+    --light-bg: #ededed;
+    --primary: #24bdf9;
+    --secondary: #f2f4f0;
+    --accent: #4379d0;
+    --navbar: #d7dadf; 
+    --transparent: rgba(255,255,255,0.7);
+  
+    --logo-brightness: 1%;
+  
+    --hero-gradient: linear-gradient(145deg, #cbe0f1, #f0fbff), url(images/noise.svg);
+    }
+  
+  /* === DARK THEME === */
+  :root[data-theme="dark"] {
+    --text: var(--text-light);
+    --background: #151724;
+    --secondary-bg: #212336;
+    --light-bg: #232738;
+    --primary: #0a91c7;
+    --secondary: #052938;
+    --accent: #2c5eaf;
+    --navbar: #121321;
+    --transparent: rgba(0,0,10,0.7);
+  
+    --logo-brightness: 98%;
+  
+    --hero-gradient: linear-gradient(145deg, #272d4f, #25283c), url(images/noise.svg);
+    }
+  
+  /* ===== LOGO CWSS ===== */
+  .logo {
+    filter: brightness(var(--logo-brightness));
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  /* ===== NAVBAR CSS ===== */
+  nav {
+    position: fixed;
+    width: 100vw;
+    transition: 0.1s linear;
+    z-index: 9999;
+    padding: 0 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .nav-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 calc(((100vw - 1350px) / 2));
+  }
+  
+  nav img {
+    height: 80%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  
+  nav li{
+    padding: 0 1rem;
+    color: var(--text);
+    font-size: 1.1rem;
+  }
+  
+  nav button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    outline: none;
+  }
+  
+  .nav-change {
+    background-color: var(--navbar);
+  }
+  
+  /*===== THEME ANIMATION [i think] ===== */
+   .theme {
+      color: var(--text);
+      transition: 0.1s linear;
+  }
+  
+  /*===== RESPONSIVE CODE ===== */
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  </style>
+  </script>
     <section class="hero">
         <div class="hero-content">
-            <img src="images/PetaByte Web.png">
-            <h1>Free To Play<br>Indie Games<br>Studio</h1>
-            <a href="#">Our Games</a>
+            <br><br>
+            <!--<img src="images/PetaByte Web.png">-->
+            <h1>Level Up<br>Your Gaming<br>Experience!</h1><br>
+            <a href="#">Our Games <span class="material-symbols-outlined">
+arrow_circle_up
+</span></a>
         </div>
     </section>
 </body>
